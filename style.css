@@ -1,0 +1,368 @@
+/* Reset browser defaults */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Begin custom styles */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+	padding: 60px 0;
+}
+
+header {
+  margin: 50px auto 60px auto;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 30px;
+  display: inline-block;
+  text-align: left;
+  float:left;
+}
+
+nav ul {
+  float: right;
+}
+
+nav li {
+  color: rgb(160,160,160);
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: right;
+  padding: 0 10px;
+}
+
+.hero {
+  background-color: #ffe1bd;
+  padding: 100px 0 100px 0;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+  padding-bottom: 75px;
+}
+
+h5 {
+  line-height: 1.5;
+}
+
+/* Button styling */
+
+.hero .button {
+  margin-top: 60px;
+}
+
+.button {
+  padding: 24px 50px;
+  border-radius: 50px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.black {
+  color: white;
+  background-color: black;
+}
+
+.black:hover {
+  background-color: #ffe1bd;
+  color: black;
+}
+
+.white {
+  color: black;
+  background-color: white;
+  border: 1px solid rgb(160,160,160);
+}
+
+.what-we-do .white:hover {
+  border: 1px solid black;
+}
+
+form .white:hover {
+  background-color: #ffe1bd;
+  cursor: pointer;
+}
+
+/* End Button Styling */
+
+/*'What We Do' Styling*/
+
+h3 {
+  font-size: 48px;
+  font-weight: lighter;
+	padding-bottom: 60px;
+}
+
+.what-we-do .column {
+  display: inline-block;
+	width: 45%;
+	text-align: left;
+}
+
+.what-we-do .column:first-child {
+	float: left;
+}
+
+.what-we-do .column:last-child {
+	float: right;
+}
+
+.what-we-do .row {
+	display: block;
+	float: left;
+	margin-bottom: 50px;
+}
+
+.what-we-do img {
+	/*max-width: 560px;*/
+	width: 90%;
+	height: auto;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h4 span {
+	font-size: 36px;
+	font-weight: bold;
+	display: block;
+}
+
+.what-we-do h4, .what-we-do p {
+	margin-bottom: 30px;
+}
+
+/*best work styling*/
+section.best-work {
+	margin-top: -100px;
+}
+
+.best-work .column {
+	display: inline-block;
+	width: 30%;
+}
+
+.best-work .column:first-child {
+	margin-right: 2.5%;
+}
+
+.best-work .column:last-child {
+	margin-left: 2.5%;
+}
+
+.best-work img:first-child {
+	margin-bottom: 5%;
+}
+
+.best-work img {
+	width: 100%;
+	height: auto;
+}
+
+.best-work .container {
+	margin-bottom: 40px;
+}
+
+/*best team styling*/
+.best-team {
+	background-color: #ffe1bd;
+	width: 100%;
+}
+
+.best-team img {
+	border-radius: 168px;
+}
+
+.best-team .column {
+	display: inline-block;
+	width: 20%;
+	padding: 0 40px;
+}
+
+/* Clients say's */
+.clients-say .row {
+	float: left;
+	margin-bottom: 60px;
+}
+
+.clients-say .column {
+	float: left;
+	width: 45%;
+	height: 100%;
+}
+
+.clients-say .column:first-child {
+	margin-right: 20px;
+}
+
+.clients-say .column:last-child {
+	margin-left: 20px;
+}
+
+.clients-say h4 {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+.clients-say h5 {
+	text-align: right;
+}
+
+.clients-say p {
+	text-align: left;
+}
+
+.clients-say img {
+	display: inline-block;
+	width: 20%;
+	height: auto;
+	margin: 10px;
+}
+
+/*Contact Styling*/
+
+.contact {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 50px 0;
+}
+
+.contact h3 {
+  padding-bottom: 60px;
+}
+
+.contact .container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.contact .column {
+	display: inline-block;
+	text-align: left;
+}
+
+/*.contact .row {
+	float: left;
+}*/
+
+.contact .column:first-child {
+	float: left;
+  width: 45%;
+}
+
+.contact .column:last-child {
+	float: right;
+  width: 45%;
+}
+
+.contact .row {
+	margin-bottom: 30px;
+}
+
+i {
+  display: inline;
+}
+
+.contact p {
+	display: inline;
+  line-height: 1.15;
+}
+
+.contact img {
+	filter: invert(100%);
+}
+
+input {
+  display: block;
+  width: 80%;
+  background-color: black;
+  border: none;
+  border-bottom: 1px solid rgb(160,160,160);
+  margin-bottom: 20px;
+}
+
+form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*Footer Styling*/
+
+footer {
+  padding: 20px;
+  line-height: 1.5;
+}
+
+footer p {
+  color: rgb(160,160,160);
+}
